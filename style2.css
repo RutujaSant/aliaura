@@ -1,0 +1,209 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #444444;
+    line-height: 1.6;
+}
+
+/* Header / Hero Section */
+header.hero {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffab00;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    margin-left: 30px;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffab00;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: #ffab00;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* About, Features, and Value Proposition Sections */
+.about-section, .value-proposition, .contact-us {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2, .features h2, .value-proposition h2, .contact-us h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p, .value-proposition p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.features {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 30%;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Us Section */
+.contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us input, .contact-us textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-us button {
+    background-color: #ffab00;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-us button:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #aaaaaa;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #aaaaaa;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #ffab00;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+/* Hero Shot */
+.hero-shot {
+    width: 70%; /* Makes it responsive and smaller */
+    max-height: 210px; /* Set a smaller max height */
+    height: auto; /* Ensures the aspect ratio is maintained */
+    object-fit:fill; /* Ensures it covers the space without distortion */
+    margin: 80px auto; /* Centers the image and adds space above/below */
+    border-radius: 15px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for depth */
+}
